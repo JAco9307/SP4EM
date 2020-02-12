@@ -1,0 +1,5 @@
+09:58:59 ERROR : Workspace location D:\SP4EM GIT\project_1 contains spaces. Please switch to a workspace without spaces in its path.
+09:59:04 INFO  : Launching XSCT server: xsct.bat -n  -interactive D:\SP4EM GIT\project_1\temp_xsdb_launch_script.tcl
+09:59:12 ERROR : (XSDB Server)couldn't read file "D:\SP4EM": no such file or directory
+
+09:59:15 INFO  : Registering command handlers for Vitis TCF services

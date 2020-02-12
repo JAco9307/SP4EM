@@ -1,0 +1,1 @@
+set xsdb_idle_timeout -1;source D:/Vitis/Vitis/2019.2/scripts/xsdb/xsdb/xsdb-server.tcl
