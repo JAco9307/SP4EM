@@ -1,0 +1,4 @@
+﻿  RSATestC++.cpp
+D:\SP4EM-GIT\RSATestC++\RSATestC++\RSATestC++.cpp(25,24): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
+D:\SP4EM-GIT\RSATestC++\RSATestC++\RSATestC++.cpp(25,21): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
+  RSATestC++.vcxproj -> D:\SP4EM-GIT\RSATestC++\Debug\RSATestC++.exe
