@@ -1,0 +1,29 @@
+2020-02-12T13:21:10.084417300255-13:21:10 **** Incremental Build of configuration Debug for project test ****
+000-make all 
+000-make --no-print-directory pre-build
+000-a9-linaro-pre-build-step
+000-' '
+000-make --no-print-directory main-build
+000-'Building file: ../src/helloworld.c'
+000-'Invoking: ARM v7 gcc compiler'
+000-arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -IC:/Users/skriv/workspace/design_1_wrapper/export/design_1_wrapper/sw/design_1_wrapper/standalone_domain/bspinclude/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+000-../src/helloworld.c: In function 'main':
+000/test/src/helloworld.c68-1-1variable 'BTNinp' set but not used [-Wunused-but-set-variable]1-../src/helloworld.c:68:14: warning: variable 'BTNinp' set but not used [-Wunused-but-set-variable]
+000-  int DIPinp, BTNinp;
+000-              ^~~~~~
+000-'Finished building: ../src/helloworld.c'
+000-' '
+000-'Building target: test.elf'
+000-'Invoking: ARM v7 gcc linker'
+000-arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -LC:/Users/skriv/workspace/design_1_wrapper/export/design_1_wrapper/sw/design_1_wrapper/standalone_domain/bsplib/lib -o "test.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+000-'Finished building target: test.elf'
+000-' '
+000-'Invoking: ARM v7 Print Size'
+000-arm-none-eabi-size test.elf  |tee "test.elf.size"
+000-   text	   data	    bss	    dec	    hex	filename
+000-  20356	   1176	  22584	  44116	   ac54	test.elf
+000-'Finished building: test.elf.size'
+000-' '
+00255-
+13:21:11 Build Finished (took 1s.508ms)
+
