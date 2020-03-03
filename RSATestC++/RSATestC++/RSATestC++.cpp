@@ -1,7 +1,7 @@
 #include <iostream>
 using namespace std;
 
-int power(int x, unsigned int y, int p)
+int powermod(int x, unsigned int y, int p)
 {
     int res = 1;
     x = x % p; 
@@ -16,9 +16,30 @@ int power(int x, unsigned int y, int p)
 }
 int main()
 {
-    int x = 12;
-    int y = 12;
-    int p = 5;
-    cout << x << "^" << y << " mod(" << p << ") = " << power(x, y, p) << endl << endl;
-    return 0;
+    int x = 22;
+    int y = 2;
+
+
+    int p = 73;
+    int q = 97;
+    int n = p * q;
+    int phi = (p - 1) * (q - 1);
+    int e = 97;
+    int d = 2209;
+
+    int message = 0;
+    cout << "\n" << "Encryption key = " << e;
+    cout << "\n" << "Decryption key = " << d;
+    cout << "\n" << "n = pq = " << n;
+    cout << "\n" << "e = " << e;
+    cout << "\n" << "phi = " << phi << endl;
+    while (++message < n)
+    {
+        int c = powermod(message, e, n); //encrypt the message
+        int m = powermod(c, d, n);
+        cout << endl << "Send: " << message << " = " << m << " recieve";
+        if (message == c) {
+            cout << " bad encryption";
+        }
+    }
 }
